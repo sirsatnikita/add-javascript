@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.action-button {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-container {
+    display: flex;
+}
+
+.search-input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.group-list {
+    margin: 20px;
+}
+
+.groups-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.group-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 20px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.group-container:hover {
+    transform: scale(1.05);
+}
+
+.group-name {
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.group-info {
+    display: none;
+}
+
+.group-info div {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Styling for each group box */
+.all-is-well {
+    background-color: #ffc107;
+}
+
+.coder {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.firefly {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .group-container {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .group-container {
+        flex-basis: calc(100% - 20px);
+    }
+}
